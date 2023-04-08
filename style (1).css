@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+#f1{
+    top: 0;
+    background-image: linear-gradient(to right, #6222e2d1 , #763aeed1);
+    height: 100vh;
+    position: relative;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: rgba(49, 48, 48, 0.719); */
+    position: sticky;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-top: 15px;
+}
+.logo h1{
+    color: white;
+    font-size: 29px;
+    font-family:Poppins;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 18%;
+    padding-top: 20px;
+}
+nav li{
+    list-style: none;
+    position: relative;
+    padding: 0 10px;
+    display: inline-block;
+    font-weight: 500;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+button{
+    border-radius: 30px;
+    padding: 13px 23px;
+    background-image: linear-gradient(97.83deg, #B326CA 14.98%, #4200FF 103.58%);
+    border: none;
+    font-weight: 600;
+    color: white;
+    font-size: 14px;
+    box-shadow:  12px 12px 8px rgba(0, 0, 0, 0.616);
+    cursor: pointer;
+}
+button:hover{
+    color: black;
+    background-image: linear-gradient(97.83deg, #e2f72d 14.98%, #e2f72d 103.58%);
+    box-shadow:  12px 12px 8px rgba(243, 238, 164, 0.986);
+    border: 0.5px solid black;
+}
+
+#f1_1{
+    display: flex;
+    /* justify-content: space-between; */
+}
+#f1_1  .left{
+    padding:140px 0 0 240px;
+    width: 100vw;
+    /* border: 2px solid black; */
+    
+}
+#f1_1  .left h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+#f1_1  .left h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.562);
+    line-height: 50px;
+    padding-bottom: 50px;
+}
+#f1_1  .right {
+    /* border: 2px solid black; */
+    height: 57vh;
+    width: 100vw;
+}
+#f1_1  .right img{
+    position: relative;
+    animation-name: ani;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    top: 140px;
+    animation-direction: alternate;
+}
+@keyframes ani{
+    from{
+        top: 100px;
+    }
+    to{
+        top: 50px;
+    }
+}
+#f1_2{
+    position: relative;
+    margin-top: 145px;
+    width: 100%;
+    height: 22vh;
+    overflow: hidden;
+}
+#f1_2 .wave {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    background: url(wave.png);
+    background-size: 1000px 100px;
+}
+
+
+#f1_2 .wave.wave1 {
+    animation: animate1 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 9s;
+    bottom: 0px;
+}
+@keyframes animate1{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+#f1_2 .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -2s;
+    bottom: 10px;
+}
+@keyframes animate2{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+#f1_2 .wave.wave3 {
+    animation: animate3 7s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -10s;
+    bottom: 10px;
+}
+@keyframes animate3{
+    0%
+    {
+        background-position-x: 0px;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+
+
+#f1_2 .wave.wave4 {
+    animation: animate4 5s linear infinite;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+@keyframes animate4{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+.bt button{
+    padding: 20px 35px;
+}
+
+
+
+.bt{
+    /* border: 2px solid black; */
+    position: absolute;
+    height: 20vh;
+    padding-top: 0px;
+    animation-name: ani2;
+    animation-duration: 1.6s;
+    animation-direction: alternate-reverse;
+    /* animation-delay: 1s; */
+    
+}
+@keyframes ani2 {
+    from{
+        padding-top: 0px;
+    }
+    to{
+        padding-top: 50px;
+    }
+}
+.bt1{
+    /* border: 2px solid black; */
+    /* height: 20vh; */
+    position: absolute;
+    padding-top: 0px;
+    animation-name: ani2;
+    animation-duration: 1.6s;
+    animation-direction: alternate-reverse;
+    /* animation-delay: 1s; */
+}
+@keyframes ani2 {
+    from{
+        padding-top: 0px;
+    }
+    to{
+        padding-top: 35px;
+    }
+}
